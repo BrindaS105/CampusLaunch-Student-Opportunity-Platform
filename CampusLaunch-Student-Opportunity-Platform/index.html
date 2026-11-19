@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusLaunch | Student Opportunities</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div>
+      <h1>CampusLaunch</h1>
+      <p>Discover opportunities. Organise your future.</p>
+    </div>
+    <span class="tag">Student Dashboard</span>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <h2>Your next opportunity starts here.</h2>
+      <p>Discover internships, scholarships and competitions in one place.</p>
+    </section>
+
+    <section class="stats">
+      <div class="stat"><span id="totalCount">0</span><p>Available</p></div>
+      <div class="stat"><span id="savedCount">0</span><p>Saved</p></div>
+      <div class="stat"><span id="appliedCount">0</span><p>Applied</p></div>
+    </section>
+
+    <section class="filters">
+      <input id="searchInput" type="text"
+        placeholder="Search opportunities...">
+      <select id="categoryFilter">
+        <option value="All">All categories</option>
+        <option value="Internship">Internship</option>
+        <option value="Scholarship">Scholarship</option>
+        <option value="Competition">Competition</option>
+      </select>
+      <select id="statusFilter">
+        <option value="All">All opportunities</option>
+        <option value="Saved">Saved</option>
+        <option value="Applied">Applied</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Explore opportunities</h2>
+      <div id="opportunityList" class="opportunity-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>CampusLaunch — A student-focused product prototype.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
